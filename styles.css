@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.navHolder {
+  position: fixed;
+  left: 10px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.bars {
+  display: none;
+}
+
+.bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: black;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bars.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+.bars.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightgray;
+  height: 50px;
+  width: 100vw;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: height 0.4s, opacity 0.5s ease-in;
+  transition: height 0.4s, opacity 0.5s ease-in;
+  margin-left: -10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  opacity: 1;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.links.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 960px) {
+  .bars {
+    display: block;
+  }
+
+  .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .app .photoHolder .imageDescription .photoOne .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoTwo .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoThree .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoFour .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoFive .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoSix .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoSeven .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoEight .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoNine .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+
+  .app .photoHolder .imageDescription .photoTen .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.7;
+  }
+}
+.page-container {
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+.page-container .home-container {
+  max-width: 1280px;
+  min-height: 1400px;
+}
+.page-container .home-container .border {
+  max-width: 1280px;
+  height: 50px;
+  background-color: white;
+}
+.page-container .home-container .logo-container {
+  height: 300px;
+  max-width: 1280px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page-container .home-container .logo-container .logo {
+  max-height: 300px;
+  max-width: 300px;
+  margin-left: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-container .home-container .logo-container .logo-description {
+  height: 300px;
+  width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.page-container .home-container .home-description {
+  max-width: 1280px;
+  min-height: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-container .browse-container {
+  max-width: 1280px;
+  min-height: 1400px;
+}
+.page-container .browse-container .border {
+  max-width: 1280px;
+  height: 50px;
+}
+.page-container .browse-container .app {
+  margin-top: 70px;
+  margin-left: 70px;
+}
+.page-container .browse-container .photo-description-container {
+  max-width: 1280px;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.page-container .browse-container .photoHolder {
+  width: 550px;
+  height: 300px;
+  margin-bottom: 25px;
+}
+.page-container .browse-container .imageDescription {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-container .browse-container .photoOne {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb1_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoTwo {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb2_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoThree {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb3_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoFour {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb4_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoFive {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb5_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoSix {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb6_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoSeven {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb7_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoEight {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb8_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoNine {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb9_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .photoTen {
+  width: 300px;
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  background-image: url(../images/thumb10_300x300.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-container .browse-container .description {
+  min-height: 150px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 25px;
+  padding-left: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: lightgray;
+}
+.page-container .browse-container .button-holder .view {
+  background-color: blue;
+  height: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.page-container .browse-container .button-holder .button {
+  margin-left: 15px;
+}
+.page-container .browse-container .button {
+  background-color: lightgray;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin-left: 75px;
+  margin-top: 80px;
+  margin-bottom: -20px;
+}
+.page-container .browse-container button {
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.page-container .browse-container .view {
+  display: none;
+}
+.page-container .browse-container .photoOne:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoTwo:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoThree:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoFour:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoFive:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoSix:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoSeven:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoEight:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoNine:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+.page-container .browse-container .photoTen:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1120px) {
+  .photo-description-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 650px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -70px;
+  }
+}
